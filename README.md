@@ -1,11 +1,18 @@
-# Start your own "Can of Books" App
+**Author**: Sergii Otryshko & Ibraheem Ibraheem
+**Version**: 1.0.0
 
-This repository has starter code to begin work on creating your own online bookshelf.
+## Overview
+The app will display books by the user from a database.
 
-## What can books do?
+## Getting Started
+Clone it from our github
 
-Books are life-changing. They have the power to enlighten, educate, entertain, heal, and help us grow. Build out this code base to create an web app to track what books have impacted you, and what's recommended to read next.
+## Architecture
+The application uses JavaScript, React, Axios, Express and MongoDB
 
-## Use this template
+## Estimates
+20 hours
 
-Clone this repo to your own account with the green "Use this template" button. Then, add any collaborators. Now you are ready to start adding features! Deploy your site to let the world know which books have had the greatest impact on you, and what's recommended. Enjoy!
+## Credit and Collaborations
+Sergii Otryshko  - https://github.com/S14mx
+Ibraheem Ibraheem - https://github.com/iibraheem2001
