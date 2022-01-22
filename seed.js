@@ -34,7 +34,7 @@ const seed = async () => {
   try {
     await Book.create({
       title: 'Forgotten Realms',
-      description: 'elvs and dwarves',
+      description: 'elves and dwarves',
       status: 'available',
       email: 'sergey.otryshko@gmail.com'
     })
