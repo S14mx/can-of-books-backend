@@ -6,10 +6,13 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 const Book = require('./models/bookModel.js');
 const getBooks = require('./handlers/getBooks');
+const addBook = require('./handlers/addBook');
+const deleteBook = require('./handlers/deleteBook');
 
 
 const app = express();
 app.use(cors());
+app.use(express.json());
 
 const PORT = process.env.PORT || 3002;
 
@@ -23,5 +26,7 @@ db.once('open', function() {
 });
 
 app.get('/books', getBooks);
+app.post('/books', addBook);
+app.delete('/books/:id', deleteBook)
 
 app.listen(PORT, () => console.log(`listening on ${PORT}`));
