@@ -8,6 +8,7 @@ const Book = require('./models/bookModel.js');
 const getBooks = require('./handlers/getBooks');
 const addBook = require('./handlers/addBook');
 const deleteBook = require('./handlers/deleteBook');
+const updateBook = require('./handlers/updateBook');
 
 
 const app = express();
@@ -27,6 +28,9 @@ db.once('open', function() {
 
 app.get('/books', getBooks);
 app.post('/books', addBook);
-app.delete('/books/:id', deleteBook)
+app.delete('/books/:id', deleteBook);
+app.put('/books/:id', updateBook)
 
 app.listen(PORT, () => console.log(`listening on ${PORT}`));
+
+
