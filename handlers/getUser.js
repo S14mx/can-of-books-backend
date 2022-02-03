@@ -1,5 +1,5 @@
 `use strict`;
-const verifyUser = require('../auth')
+const verifyUser = require('../auth.js');
 
 let getUser = (req, res) => {
   verifyUser (req, (err, user) => {
